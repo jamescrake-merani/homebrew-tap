@@ -7,7 +7,6 @@ class AutoTimesheet < Formula
 
   depends_on "clojure" => :build
   depends_on "graalvm" => :build
-  depends_on "xcodes" => :build
   depends_on "zlib"
 
   env :std
