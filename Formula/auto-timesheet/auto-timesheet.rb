@@ -13,11 +13,11 @@ class AutoTimesheet < Formula
   env :std
   def install
     system "clojure", "-T:build", "ci"
-    system "native-image",
-      "--features=clj_easy.graal_build_time.InitClojureClasses",
-      "-H:-CheckToolchain",
-      "-jar", "target/com.github.jamescrake-merani/auto-timesheet-*.jar",
-      "-o", "auto-timesheet"
+    system("native-image \
+  --features=clj_easy.graal_build_time.InitClojureClasses \
+  -H:-CheckToolchain \
+  -jar target/com.github.jamescrake-merani/auto-timesheet-*.jar \
+  -o auto-timesheet")
     bin.install "auto-timesheet"
   end
 end
