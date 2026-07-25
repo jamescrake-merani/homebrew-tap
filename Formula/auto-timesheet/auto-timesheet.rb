@@ -1,7 +1,6 @@
 class AutoTimesheet < Formula
   desc "A CLI application for automatically keeping timesheets."
   homepage "https://github.com/jamescrake-merani/auto-timesheet"
-  version "0.1.0"
   url "https://github.com/jamescrake-merani/auto-timesheet/archive/refs/tags/0.1.0.tar.gz"
   sha256 "f77a6a40d02a2b4cb926dc8e356f48930ff4de526fad97f6291f73055d40104c"
   license "GPL-3.0-or-later"
