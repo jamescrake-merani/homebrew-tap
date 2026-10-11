@@ -7,16 +7,12 @@ class AutoTimesheet < Formula
 
   depends_on "clojure" => :build
   depends_on "graalvm" => :build
+  depends_on "just" => :build
   depends_on "zlib"
 
   env :std
   def install
-    system "clojure", "-T:build", "ci"
-    system("native-image \
-  --features=clj_easy.graal_build_time.InitClojureClasses \
-  -H:-CheckToolchain \
-  -jar target/com.github.jamescrake-merani/auto-timesheet-*.jar \
-  -o auto-timesheet")
-    bin.install "auto-timesheet"
+    system("just build")
+    bin.install "target/auto-timesheet"
   end
 end
