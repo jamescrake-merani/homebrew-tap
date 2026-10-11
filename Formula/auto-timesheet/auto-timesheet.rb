@@ -1,8 +1,8 @@
 class AutoTimesheet < Formula
   desc "CLI application for automatically keeping timesheets"
   homepage "https://github.com/jamescrake-merani/auto-timesheet"
-  url "https://github.com/jamescrake-merani/auto-timesheet/archive/refs/tags/0.2.0.tar.gz"
-  sha256 "d6bfbcec3f2d80300d83bead86019f554e6d7174a2765c9ecd16aac4316335cc"
+  url "https://github.com/jamescrake-merani/auto-timesheet/archive/refs/tags/0.3.0.tar.gz"
+  sha256 "0da656445e163ad25a29ee681fc886ececb51ecbe5f8d22ea98a1dc0b5be92d9"
   license "GPL-3.0-or-later"
 
   depends_on "clojure" => :build
